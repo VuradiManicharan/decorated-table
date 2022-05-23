@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Decorated Table</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        table{
+            border-radius: 30px;
+            border-collapse: collapse;
+            margin: 25px 0px;
+            font-size: 1rem;
+            width: 800px;
+            height: 200px;
+            text-align: center;
+            margin-left: 200px;
+            color: rgb(255, 0, 0);
+        }
+        thead{
+            background-color: antiquewhite;
+            color: black;
+            height: 30px;
+        }
+        tbody tr:last-of-type{
+            border-bottom: antiquewhite 2px solid;
+        }
+        tbody tr:nth-child(2){
+            background-color: rgb(42, 165, 97);
+            border-radius: 5px;
+            color: black;
+        }
+        th :first-child{
+            border-top-left-radius: 100px;
+        }
+        h1{
+            font-size: 30px;
+            text-align: center;
+            font-family:'Courier New', Courier, monospace;
+        }
+        tbody tr:nth-child(4){
+            background-color:rgb(42, 165, 97);
+            border-radius: 5px;
+            color: black;
+        }
+        tbody tr:nth-child(2):hover{
+            background-color: skyblue;
+            cursor: pointer;
+            transition: 1.2ms;
+            transform: scale(1.2);
+        }
+        tbody tr:nth-child(4):hover{
+            background-color: skyblue;
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <caption><h1>Movie Cast</h1></caption><hr>
+    <table>
+    <thead>
+        <th>Hero Name</th>
+        <th>Heroine Name</th>
+        <th>Movie Title</th>
+        <th>Gener</th>
+        <th>Director Name</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Ramcharan</td>
+            <td>Alia Butt</td>
+            <td>RRR</td>
+            <td>Action/Drama</td>
+            <td>S.S Rajamouli</td>
+        </tr>
+        <tr>
+            <td>Yash</td>
+            <td>Srinidhi Shetty</td>
+            <td>KGF-2</td>
+            <td>Action/Drama</td>
+            <td>Prashanth Neel</td>
+        </tr>
+        <tr>
+            <td>Rajinikanth</td>
+            <td>Aishwarya Rai</td>
+            <td>ROBO</td>
+            <td>Sci-fi/Action</td>
+            <td>Shankar</td>
+        </tr>
+        <tr>
+            <td>Aamir Khan</td>
+            <td>Anushka Sharma</td>
+            <td>PK</td>
+            <td> Romance/Drama</td>
+            <td> Rajkumar Hirani</td>
+        </tr>
+        <tr>
+            <td>Ayushman Khurrana</td>
+            <td>Yami Gautam</td>
+            <td>Vicky Donor</td>
+            <td>Comedy/Romance</td>
+            <td>Shoojit Sircar</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
